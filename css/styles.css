@@ -1,0 +1,175 @@
+body{
+    font-family: var(--main-font,--second-font) ;
+    color: var(--first-color);
+}
+:root{
+    --first-color: #212121;
+    --second-color: #757575;
+    --white-color: #ffffff;
+    --white-color-transparent:#ffffff99 ;
+    --variable-color: #2196F3;
+    --backgroundcolor: #2F303A;
+    --section-color:  #F5F4FA;
+    --main-font: 'roboto', sans-serif;
+    --second-font: 'raleway', sans-serif;
+}
+.list{
+    list-style: none;
+}
+.link{
+    text-decoration: none;
+}
+.title{
+font-weight: 700;
+font-size: 36px;
+line-height: 1.16;
+text-align: center;
+letter-spacing: 0.03em;
+}
+/*------------HEADER------------ */
+.logo{
+font-family: var(--second-font);
+font-weight: 700;
+font-size: 26px;
+line-height:1.19;    
+letter-spacing: 0.03em;
+color: inherit;
+}
+.logo-color{
+    color: var(--variable-color);
+}
+.header-link{
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: inherit;
+}
+.contact-header-link{
+font-weight: 500;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.02em;
+color: var(--second-color);
+}
+.header-link:hover,
+.header-link:focus,
+.contact-header-link:hover,
+.contact-header-link:focus, .activ{
+    color: var(--variable-color);
+}
+
+/*------------HEADER------------ */
+/*------------HERO---------------*/
+.hero{
+background-color: var(--backgroundcolor);
+}
+.hero-title{
+font-weight: 900;
+font-size: 44px;
+line-height: 1.36;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+color: var(--white-color);
+}
+.hero-btn{
+color: var(--white-color);
+font-family: inherit;
+background-color: var(--variable-color);
+font-weight: 700;
+font-size: 16px;
+line-height: 1.87;
+letter-spacing: 0.06em;
+cursor: pointer;
+}
+/*-----------------HERO------------*/
+/* ---------------ABOUT-US------------ */
+.about-title{
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+}
+.about-after-title{
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--second-color);
+}
+/* ---------------ABOUT-US------------ */
+
+/* ---------------DESCRIPTION------------ */
+
+/* ----------------OUR-TEAM----------- */
+.our-team{
+background-color: var(--section-color);
+}
+.our-team-title{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.18;
+letter-spacing: 0.03em;
+}
+.our-team-aftertitle{
+font-weight: 400;
+font-size: 16px;
+line-height: 1.18;
+letter-spacing: 0.03em;
+color: var(--second-color);
+}
+/* ----------------OUR-TEAM----------- */
+
+/* -------------------FOOTER-------------- */
+.footer{
+color: var(--white-color);
+background-color:var(--backgroundcolor) ;
+}
+
+.address-link{
+font-style: normal;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+color: var(--white-color-transparent);
+}
+
+
+a[href="http://surl.li/anses"]{
+color: inherit;
+} 
+/* -------------------FOOTER-------------- */
+
+.btn{
+font-family: inherit;
+cursor: pointer;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.62;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--first-color);
+}
+.btn:hover,
+.btn:focus{
+color: var(--white-color);
+background-color:var(--variable-color);
+}
+/* -------------------PORTFOLIO-------------- */
+.portfolio-title{
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color:var(--first-color);
+}
+.portfolio-aftertitle{
+font-weight:400;
+font-size: 16px;
+line-height:1.87;
+letter-spacing: 0.03em;
+color: var(--second-color);
+}
+/* -------------------PORTFOLIO-------------- */
