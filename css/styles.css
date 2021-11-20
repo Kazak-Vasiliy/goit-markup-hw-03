@@ -1,17 +1,30 @@
 body{
-    font-family: var(--main-font,--second-font) ;
+    font-family: var(--main-font,--second-font);
     color: var(--first-color);
+    
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,0.785049053801208) 0%, rgba(4,70,45,0.8438725832129726) 9%, rgba(7,148,56,1) 19%, rgba(50,136,38,0.7794468129048494) 25%, rgba(121,116,9,1) 35%, rgba(128,80,37,0.8410714627647934) 44%, rgba(142,8,92,1) 62%, rgba(132,23,104,0.8550770650056898) 66%, rgba(86,89,156,1) 84%, rgba(59,127,187,0.8242647400757178) 91%, rgba(0,212,255,1) 100%);
 }
 :root{
     --first-color: #212121;
     --second-color: #757575;
     --white-color: #ffffff;
-    --white-color-transparent:#ffffff99 ;
+    --white-color-transparent:#ffffff99;
     --variable-color: #2196F3;
     --backgroundcolor: #2F303A;
     --section-color:  #F5F4FA;
     --main-font: 'roboto', sans-serif;
     --second-font: 'raleway', sans-serif;
+}
+h1,h2,h3{
+    margin:0;
+}
+ul{
+    margin:0;
+    padding:0;
+}
+p{
+    margin:0;
 }
 .list{
     list-style: none;
@@ -27,6 +40,21 @@ text-align: center;
 letter-spacing: 0.03em;
 }
 /*------------HEADER------------ */
+.header{
+    padding: 24px 0 25px;
+
+}
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 1170px;
+}
+.nav{
+    display: flex;
+    align-items: center;
+}
 .logo{
 font-family: var(--second-font);
 font-weight: 700;
@@ -37,6 +65,12 @@ color: inherit;
 }
 .logo-color{
     color: var(--variable-color);
+}
+.header-list{
+    display: flex;
+}
+.contacts-header-list{
+    display: flex;
 }
 .header-link{
 font-weight: 500;
@@ -60,6 +94,14 @@ color: var(--second-color);
 }
 
 /*------------HEADER------------ */
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 1170px;
+}
+
 /*------------HERO---------------*/
 .hero{
 background-color: var(--backgroundcolor);
@@ -82,9 +124,17 @@ font-size: 16px;
 line-height: 1.87;
 letter-spacing: 0.06em;
 cursor: pointer;
+border-radius: 4px;
+border-color: var(--variable-color);
+display: block;
+margin: 0 auto;
 }
 /*-----------------HERO------------*/
 /* ---------------ABOUT-US------------ */
+.about-list{
+    display: flex;
+    justify-content: space-between;
+}
 .about-title{
 font-weight: 700;
 font-size: 14px;
@@ -102,74 +152,98 @@ color: var(--second-color);
 /* ---------------ABOUT-US------------ */
 
 /* ---------------DESCRIPTION------------ */
+.description-list{
+    display: flex;
+    justify-content: space-between;
+}
 
 /* ----------------OUR-TEAM----------- */
 .our-team{
-background-color: var(--section-color);
+    background-color: var(--section-color);
+}
+.our-team-list{
+    display: flex;
+    justify-content: space-between;
 }
 .our-team-title{
-font-weight: 500;
-font-size: 16px;
-line-height: 1.18;
-letter-spacing: 0.03em;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
 }
 .our-team-aftertitle{
-font-weight: 400;
-font-size: 16px;
-line-height: 1.18;
-letter-spacing: 0.03em;
-color: var(--second-color);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--second-color);
 }
 /* ----------------OUR-TEAM----------- */
 
 /* -------------------FOOTER-------------- */
 .footer{
-color: var(--white-color);
-background-color:var(--backgroundcolor) ;
+    color: var(--white-color);
+    background-color:var(--backgroundcolor) ;
+    margin: 0 auto;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 1170px;
 }
 
 .address-link{
-font-style: normal;
-font-size: 14px;
-line-height: 1.71;
-letter-spacing: 0.03em;
-color: var(--white-color-transparent);
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--white-color-transparent);
 }
 
-
 a[href="http://surl.li/anses"]{
-color: inherit;
+    color: inherit;
 } 
 /* -------------------FOOTER-------------- */
 
 .btn{
-font-family: inherit;
-cursor: pointer;
-font-weight: 500;
-font-size: 16px;
-line-height: 1.62;
-text-align: center;
-letter-spacing: 0.03em;
-color: var(--first-color);
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--first-color);
+    border-radius: 4px;
+    border-color: var(--section-color);
 }
 .btn:hover,
 .btn:focus{
-color: var(--white-color);
-background-color:var(--variable-color);
+    color: var(--white-color);
+    background-color:var(--variable-color);
+    border-color: var(--variable-color);
 }
 /* -------------------PORTFOLIO-------------- */
+.btn-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 611px;
+}
 .portfolio-title{
-font-weight: 700;
-font-size: 18px;
-line-height: 2;
-letter-spacing: 0.06em;
-color:var(--first-color);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color:var(--first-color);
 }
 .portfolio-aftertitle{
-font-weight:400;
-font-size: 16px;
-line-height:1.87;
-letter-spacing: 0.03em;
-color: var(--second-color);
+    font-weight:400;
+    font-size: 16px;
+    line-height:1.87;
+    letter-spacing: 0.03em;
+    color: var(--second-color);
 }
 /* -------------------PORTFOLIO-------------- */
+
