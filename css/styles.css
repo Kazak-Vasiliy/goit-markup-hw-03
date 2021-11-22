@@ -114,7 +114,7 @@ img{
 /*------------HERO---------------*/
 .hero{
     background-color: var(--backgroundcolor);
-    padding: 200px 0 280px;
+    padding: 200px 0;
 }
 
 .section-about-us{
@@ -128,6 +128,8 @@ img{
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-color);
+    width: 696px;
+    margin: 0 auto;
 
 }
 .hero-btn{
@@ -173,8 +175,11 @@ img{
 /* ---------------DESCRIPTION------------ */
 .description-list{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     margin-top: 50px;
+}
+.description-item:not(:last-child){
+    margin-right:30px;
 }
 /* ----------------OUR-TEAM----------- */
 .our-team{
